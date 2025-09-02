@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Form</title>
+  <link rel="stylesheet" href="check.css">
+</head>
+<body>
+  <div class="kk">
+    <div class="guide">
+      <h1>Learning Guide</h1>
+      <a href="submit.html"><button type="button">Fill Form</button></a>
+      <a href="check.html"><button type="button">See Form</button></a>
+      <a href="result.php"><button type="button">See Result</button></a>
+    </div>
+  </div>
+
+  <h1>Check Form</h1>
+
+  <form method="POST" action="student.php">
+    <div class="full-width">
+      <label for="cnic">CNIC</label>
+      <input type="number" id="cnic" name="cnic" placeholder="Enter your CNIC used while filling the form" required>
+    </div>
+
+    <div class="submit-btn">
+      <button type="submit">See Form</button>
+    </div>
+  </form>
+</body>
+</html>

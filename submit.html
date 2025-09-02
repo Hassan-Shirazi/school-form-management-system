@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit The Form | Learning Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="kk">
+    <div class="guide">
+      <h1>Learning Guide</h1>
+      <a href="submit.html"> <button>Fill Form</button></a>
+      <a href="check.html"><button>See Form</button></a>
+      <a href="result.php"><button>See Result</button></a>
+    </div>
+  </div>
+  <h1>Fill Online Form to Register in Coaching</h1>
+
+  <form method="POST" action="index.php" enctype="multipart/form-data">
+    <div>
+      <label for="country">Select Country</label>
+      <select id="country" name="country" required>
+        <option disabled selected>Choose your country</option>
+        <option>Pakistan</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="city">Select City</label>
+      <select id="city" name="city" required>
+        <option disabled selected>Choose your city</option>
+        <option>Karachi</option>
+        <option>Lahore</option>
+        <option>Islamabad</option>
+        <option>Sukkur</option>
+        <option>Gwadar</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" placeholder="Enter your full name" name="name" required>
+    </div>
+
+    <div>
+      <label for="fatherName">Father Name</label>
+      <input type="text" id="fatherName" placeholder="Enter your father name" name="f_name" required>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email address" name="email" required>
+    </div>
+
+    <div>
+      <label for="phoneNo">Phone No</label>
+      <input type="number" id="phoneNo" placeholder="03xxxxxxxxx" name="no" required>
+    </div>
+
+    <div>
+      <label for="cnic">CNIC</label>
+      <input type="number" id="cnic" placeholder="Enter your CNIC" name="cnic" required>
+    </div>
+
+    <div>
+      <label for="fatherCnic">Father CNIC (Optional)</label>
+      <input type="number" id="fatherCnic" placeholder="Enter father CNIC" name="f_cnic">
+    </div>
+
+    <div>
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+
+    <div>
+      <label for="course">Select Course</label>
+      <select id="course" name="course" required>
+        <option disabled selected>Choose your course</option>
+        <option>Web Application Development</option>
+        <option>AI & Data Science</option>
+        <option>Graphic Designing</option>
+        <option>Video Editing</option>
+        <option>AI Automation</option>
+        <option>CIT & DIT</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="computerLevel">Computer Level</label>
+      <select id="computerLevel" name="c_level" required>
+        <option disabled selected>Select level</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advance</option>
+      </select>
+    </div>
+
+    <div class="full-width">
+      <label for="address">Address</label>
+      <input type="text" id="address" placeholder="Enter your complete address" name="address" required>
+    </div>
+
+    <div>
+      <label for="lastQualification">Last Qualification</label>
+      <select id="lastQualification" name="study" required>
+        <option disabled selected>Select qualification</option>
+        <option>Matric</option>
+        <option>Inter</option>
+        <option>Graduation</option>
+        <option>Master</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="hasComputer">Laptop or Computer?</label>
+      <select id="hasComputer" name="lap_com" required>
+        <option disabled selected>Do you have a computer?</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="gender">Select Gender</label>
+      <select id="gender" name="gender" required>
+        <option disabled selected>Select gender</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </div>
+
+    <div class="full-width">
+      <label for="uploadImage">Upload Your Image</label>
+      <input type="file" id="uploadImage" accept="image/png, image/jpeg, image/jpg" name="image" required>
+      <p class="note">* Only PNG, JPG, JPEG allowed | Max Size: 1MB</p>
+      <div id="preview-container">
+        <img id="preview" src="" alt="Preview">
+      </div>
+    </div>
+
+    <div class="submit-btn">
+      <button type="submit" name="btn">Submit Form</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
